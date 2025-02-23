@@ -102,7 +102,7 @@ app.post("/contact", async (req, res) => {
 
 //********************************************************
 //SUNUCU
-const appPort = 3000;
+const appPort = process.env.PORT || 3000;
 app.listen(appPort, (err) => {
     console.log(`Sunucu ${appPort} Portunda Çalışıyor`);
 });
